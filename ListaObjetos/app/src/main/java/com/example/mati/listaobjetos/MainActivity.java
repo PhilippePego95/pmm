@@ -15,13 +15,17 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Titular[] datos = new Titular[]
+    private Titular[] datos;
 
-    {
-                new Titular("Sheldon ", "Cooper ", R.drawable.img1),
-                new Titular("Leonard ", "Hofstadter", R.drawable.img2),
-                new Titular("Howard ", "Wolowitz", R.drawable.img3)
-    };
+    public MainActivity() {
+        datos = new Titular[]
+    
+        {
+                    new Titular("Sheldon ", "Cooper ", R.drawable.img1),
+                    new Titular("Leonard ", "Hofstadter", R.drawable.img2),
+                    new Titular("Howard ", "Wolowitz", R.drawable.img3)
+        };
+    }
 
 
     @Override
