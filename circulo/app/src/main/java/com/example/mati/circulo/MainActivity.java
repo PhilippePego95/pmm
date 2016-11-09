@@ -24,8 +24,17 @@ public class MainActivity extends AppCompatActivity {
             pincel.setColor(Color.BLUE);
             pincel.setStrokeWidth(15);
             pincel.setStyle(Paint.Style.STROKE);
-            canvas.drawCircle(500,500,120,pincel);
+            canvas.drawPoint(500,500,pincel);
+
+            Paint pincel1 = new Paint();
+            pincel1.setColor(Color.BLUE);
+            pincel1.setStrokeWidth(15);
+            pincel1.setStyle(Paint.Style.STROKE);
+            canvas.drawCircle(200,200,500,pincel1);
+
+
 
         }
+
     }
 }
