@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LblZona"
+        android:textStyle="bold"
+        android:text="11" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LblContinente"
+        android:text="111" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LblPrecio"
+        android:text="2222" />
+
+    <ImageView
+        android:id="@+id/ivImagen"
+        android:layout_width="88dp"
+        android:layout_height="88dp" />
+
+</LinearLayout>
