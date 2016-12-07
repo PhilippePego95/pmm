@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mati.ejerciciorecopilacion.MainActivity">
+
+    <TextView
+        android:text="Transportes Android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:text="Tarjeta dedicada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/cTarjeta" />
+
+    <CheckBox
+        android:text="Caja de Regalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cRegalo"
+        android:layout_alignBaseline="@+id/cTarjeta"
+        android:layout_alignBottom="@+id/cTarjeta"
+        android:layout_toStartOf="@+id/radioGroup5"
+        android:layout_marginEnd="148dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentEnd="true">
+        <RadioButton
+            android:text="Tarifa Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp"
+            android:id="@+id/rNormal" />
+
+        <RadioButton
+            android:text="Tarifa Urgente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rNormal"
+            android:id="@+id/rUrgente" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Introduce el peso del paquete"
+        android:id="@+id/Texto"
+        android:layout_below="@+id/cTarjeta"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/trans"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/cTarjeta"
+        android:layout_toStartOf="@+id/cTarjeta" />
+
+    <Button
+        android:text="Hacer calculos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/Texto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cTarjeta"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner" />
+</RelativeLayout>
