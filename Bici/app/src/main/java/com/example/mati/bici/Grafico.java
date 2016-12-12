@@ -77,4 +77,35 @@ public class Grafico {
         return Math.sqrt((x - x2) * (x - x2) + (y - y2) * (y - y2));
     }
 
+    public int getAlto() {
+        return alto;
+    }
+
+    public int getAncho() {
+        return ancho;
+    }
+
+    public void setPosY(double posY) {
+        this.posY = posY;
+    }
+
+    public void setPosX(double posX) {
+        this.posX = posX;
+    }
+
+    public void setIncX(double incX) {
+        this.incX = incX;
+    }
+
+    public void setIncY(double incY) {
+        this.incY = incY;
+    }
+
+    public void setRotacion(int rotacion) {
+        this.rotacion = rotacion;
+    }
+
+    public void setAngulo(int angulo) {
+        this.angulo = angulo;
+    }
 }

@@ -82,6 +82,8 @@ public class VistaJuego extends View {
                 coche.setPosY(Math.random()*(h-coche.getAlto()));
             } while (coche.distancia(bici) < (w+h)/5);
         }
+        bici.setPosX((w-bici.getAncho())/2);
+        bici.setPosY((h-bici.getAlto())/2);
 
     }
 
@@ -93,6 +95,7 @@ public class VistaJuego extends View {
             coche.dibujaGrafico(canvas);
         }
         bici.dibujaGrafico(canvas);
+
     }
 
 
